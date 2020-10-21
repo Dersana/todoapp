@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'todolist/styles.css' %}" />
+  </head>
+
+
+  <body>
+
+    <div class="container-fluid" id="wrapper">
+
+				<div class="col-lg-4 col-lg-offset-4" id="content">
+					<h1>Tasks for today</h1>
+
+					<form action="#" method="POST" role="form">
+						{% csrf_token %}
+						<div class="form-group">
+							<div class="input-group">
+							  <span class="input-group-btn">
+								  <button type="submit" class="btn btn-default" id="add-btn">ADD</button>
+							  </span>
+							</div>
+						</div>
+					</form>
+						<div class="col-lg-12">
+              <div class="">
+								<div class="btn-group">
+									<a href="#">
+									<button type="button" class="btn btn-warning">
+										<p class="glyphicon glyphicon-trash"></p> DELETE COMPLETED
+									</button></a>
+                </div>
+                <div class="btn-group">
+										<a href="#">
+									<button type="button" class="btn btn-danger">
+										<p class="glyphicon glyphicon-trash"></p> DELETE ALL
+									</button></a>
+                </div>
+							</div>
+						</div>
+      </div>
+			<footer>
+					<div class="col-lg-12 text-center">
+						Copyright &copy; Dersana 2020
+					</div>
+			</footer>
+		</div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
