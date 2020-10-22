@@ -25,7 +25,7 @@ SECRET_KEY = 'nx1a7zv_pt$^n(-e+*qp)@h026^)l=j$mpl7z*uu@$p-+s*=vs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://todolistdkk.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
