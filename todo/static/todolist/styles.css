@@ -1,0 +1,25 @@
+body {
+	background: #000;
+	font-family: sans-serif;
+}
+#wrapper {
+	margin-top: 10% !important;
+}
+#content {
+	background:#fff;
+	padding: 25px;
+}
+.todo-completed {
+	text-decoration: line-through;
+	background: rgba(149, 165, 166, .3);
+}
+
+footer {
+	margin-top: 30px;
+	color: white;
+}
+#add-btn {
+	background-color:green;
+	border-color:green;
+  color: black
+}
