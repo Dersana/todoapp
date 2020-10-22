@@ -25,7 +25,7 @@ SECRET_KEY = 'nx1a7zv_pt$^n(-e+*qp)@h026^)l=j$mpl7z*uu@$p-+s*=vs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://todolistdkk.pythonanywhere.com']
 
 
 # Application definition
@@ -119,4 +119,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/user/Desktop/udemy/django/todoapp/todo/static'
